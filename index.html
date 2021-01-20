@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogos Palmeiras</title>
+</head>
+<body>
+    <header>
+        <img id = "logo" src="./assets/logo.png" alt="Logo Palmeiras" width="50px">
+        <h2 id = "titleHeader">Sociedade Esportiva Palmeiras</h2>
+    </header>
+    <main class="container">
+        <section>
+            <h4>Campeonato Brasileiro</h4>
+            <table class="tableGames"> 
+                <thead>
+                    <th>Time 1</th>
+                    <th>Gols</th>
+                    <th>Time 2</th>
+                    <th>Gols</th>
+                    <th>Vencedor</th>
+                    <th>Data</th>                    
+                </thead>
+                <tbody>
+                    <tr class="game">
+                        <td class="player-one">Palmeiras</td>
+                        <td class="scoreboard-one">1</td>
+                        <td class="player-two">Bragantino</td>
+                        <td class="scoreboard-two">0</td>
+                        <td class="winner"></td>
+                        <td class="date">27/12/2020</td>
+                    </tr>
+                    <tr class="game">
+                        <td class="player-one">Sport-Recife</td>
+                        <td class="scoreboard-one">0</td>
+                        <td class="player-two">Palmeiras</td>
+                        <td class="scoreboard-two">1</td>
+                        <td class="winner"></td>
+                        <td class="date">09/01/2021</td>
+                    </tr>
+                    <tr class="game">
+                        <td class="player-one">Palmeiras</td>
+                        <td class="scoreboard-one">1</td>
+                        <td class="player-two">Grêmio</td>
+                        <td class="scoreboard-two">1</td>
+                        <td class="winner"></td>
+                        <td class="date">15/01/2021</td>
+                    </tr>
+                    <tr class="game">
+                        <td class="player-one">Palmeiras</td>
+                        <td class="scoreboard-one">4</td>
+                        <td class="player-two">Corinthians</td>
+                        <td class="scoreboard-two">0</td>
+                        <td class="winner">- </td>
+                        <td class="date">18/01/2021</td>
+                    </tr>
+                  
+                </tbody>
+
+            </table>
+        </section>
+
+        <section class="form">
+            <ul class="error"></ul>
+            <form class="newGame">
+                <label for="playerOne">Time 1</label>
+                <input type="text" name="playerOne" id="playerOne" class="input" placeholder="Time da Casa">
+                <label for="scoreOne">Placar</label>
+                <input type="text" name="ScoreOne" id="scoreOne" class="input"  placeholder="Time da Casa">
+
+                <label for="PlayerTwo">Time 2</label>
+                <input type="text" name="playerTwo" id="playerTwo" class="input"  placeholder="Time Visitante">
+                <label for="scoreOne">Placar</label>
+                <input type="text" name="ScoreTwo" id="scoreTwo" class="input" placeholder="Time Visitante">
+
+                <label for="date">Data</label>
+                <input type="text" name="date" id="date" class="input" placeholder="dd/mm/aaaa">
+            </form>
+
+            <button class="newGameBtn">Novo Jogo</button>
+        </section>
+
+    </main>
+    <script src="./JS/game.js"></script>
+    <script src="./JS/form.js"></script>
+</body>
+</html>
